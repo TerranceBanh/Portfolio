@@ -32,6 +32,21 @@
   grid-template-areas: ". . .";
   grid-template-rows: 1fr;
 }
+@media (max-width: 850px) {
+  .tools > .lists {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  .tools > .lists >    *                                       {
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 15rem;
+  }
+  .tools > .lists >    *   > .listing > * {
+    margin-top: 5rem;
+  }
+}
 .tools > .lists >    *                                       {
   height: 100%;
 }
@@ -156,6 +171,9 @@
 .tools > .lists > .list3 > .listing > .item5 {
   display: grid;
   grid-template-areas: '.';
+  @media (max-width: 850px) {
+    grid-template-rows: 9rem 9rem;
+  }
   .icon    {
     $icon-size: 0;
     $fire-size: 10rem;
@@ -197,9 +215,8 @@
       height: auto;
     }
   }
-  .label {
-    order: 1;
-  }
+  .label {order: 1;}
+  .icon {order: 0;}
 }
 /* CSP */
 

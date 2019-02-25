@@ -139,3 +139,12 @@
   align-items: center;
   font-size: 10rem;
 }
+
+@media (max-width: 850px) {
+  .map-form {
+    transform: scale(0.5) !important;
+  }
+  .construction {
+    transform: translate(0.7%, 20.7%) scale(0.5) !important;
+  }
+}

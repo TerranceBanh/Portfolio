@@ -1,0 +1,374 @@
+:root {
+  --icon-size: 45rem;
+  --label-size: 21rem;
+  --list1-items: 3;
+  --list2-items: 5;
+  --list3-items: 5;
+}
+
+.tools {
+  background-color: #ffdc3f7a;
+  display: -ms-grid;
+  display: grid;
+  position: absolute;
+      grid-template-areas: ".";
+  -ms-grid-rows: 1fr 9fr 1fr;
+      grid-template-rows: 1fr 9fr 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  top: 130vh;
+  height: 70vh;
+  width: 100%;
+}
+
+.tools > .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #CE4B2Cdd;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.tools > .lists {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: ". . .";
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.tools > .lists > * {
+  height: 100%;
+}
+
+.tools > .lists > * > .sub-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10%;
+}
+
+.tools > .lists > * > .listing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 90%;
+}
+
+.tools > .lists > * > .listing > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+}
+
+.tools > .lists > * > .listing > * > .label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+}
+
+.tools > .lists > .list1 > .listing > * > .label > * {
+  font-size: calc(var(--label-size) / var(--list1-items));
+}
+
+.tools > .lists > .list2 > .listing > * > .label > * {
+  font-size: calc(var(--label-size) / var(--list2-items));
+}
+
+.tools > .lists > * > .listing > * > .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+}
+
+.tools > .lists > .list1 > .listing > * > .icon > * {
+  width: calc(var(--icon-size) / var(--list1-items));
+  height: calc(var(--icon-size) / var(--list1-items));
+  font-size: calc(var(--icon-size) / var(--list1-items));
+}
+
+.tools > .lists > .list2 > .listing > * > .icon > * {
+  width: calc(var(--icon-size) / var(--list2-items));
+  height: calc(var(--icon-size) / var(--list2-items));
+  font-size: calc(var(--icon-size) / var(--list2-items));
+}
+
+.tools > .lists > .list3 > .listing > * > .icon > * {
+  width: calc(var(--icon-size) / var(--list3-items));
+  height: calc(var(--icon-size) / var(--list3-items));
+  font-size: calc(var(--icon-size) / var(--list3-items));
+}
+
+.tools > .lists > * > .listing > * > .icon > i::before {
+  /* Center Font Awesome Icons */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tools > .lists > * > .listing > * > .icon > .html {
+  color: #f16529;
+}
+
+.tools > .lists > * > .listing > * > .icon > .css {
+  color: #00aade;
+}
+
+.tools > .lists > * > .listing > * > .icon > .js {
+  color: #ffdf00;
+}
+
+.tools > .lists > * > .listing > * > .icon > .express {
+  color: #3c4958;
+}
+
+.tools > .lists > * > .listing > * > .icon > .react {
+  color: #61dafb;
+}
+
+.tools > .lists > * > .listing > * > .icon > .nodejs {
+  color: #8cc84b;
+}
+
+/* .tools > .lists > * > .listing > * > .icon > .mongdb {color: IMAGE;} */
+/* .tools > .lists > * > .listing > * > .icon > .graphql {color: IMAGE;} */
+.tools > .lists > .list3 > .listing > .item2 > .icon,
+.tools > .lists > .list3 > .listing > .item3 > .icon {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: '. . .';
+}
+
+.tools > .lists > .list3 > .listing > .item2 > .icon .fa-youtube,
+.tools > .lists > .list3 > .listing > .item3 > .icon .fa-youtube {
+  color: #ff0000;
+}
+
+.tools > .lists > .list3 > .listing > .item2 > .icon .fa-twitter,
+.tools > .lists > .list3 > .listing > .item3 > .icon .fa-twitter {
+  color: #00aced;
+}
+
+.tools > .lists > .list3 > .listing > .item2 > .icon .fa-facebook-square,
+.tools > .lists > .list3 > .listing > .item3 > .icon .fa-facebook-square {
+  color: #3b5998;
+}
+
+.tools > .lists > .list3 > .listing > .item2 > .icon .fa-linkedin,
+.tools > .lists > .list3 > .listing > .item3 > .icon .fa-linkedin {
+  color: #007bb5;
+}
+
+.tools > .lists > .list3 > .listing > .item2 > .icon .fa-reddit-alien,
+.tools > .lists > .list3 > .listing > .item3 > .icon .fa-reddit-alien {
+  color: #ff4500;
+}
+
+.tools > .lists > .list3 > .listing > .item2 > .icon .fa-tumblr-square,
+.tools > .lists > .list3 > .listing > .item3 > .icon .fa-tumblr-square {
+  color: #34465D;
+}
+
+.tools > .lists > .list3 > .listing > .item2 > .icon .fa-periscope,
+.tools > .lists > .list3 > .listing > .item3 > .icon .fa-periscope {
+  background: -webkit-radial-gradient(left 50% top 40%, circle, #e94f3c 0%, #e94f3c 45%, #40a4c4 45%, #40a4c4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tools > .lists > .list3 > .listing > .item2 > .icon .fa-instagram,
+.tools > .lists > .list3 > .listing > .item3 > .icon .fa-instagram {
+  background: -webkit-radial-gradient(bottom left, #fccc63, #fbad50, #e95950, #cd486b, #bc2a8d, #8a3ab9, #4c68d7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tools > .lists > .list3 > .listing > .item2 > .icon .fa-comments,
+.tools > .lists > .list3 > .listing > .item3 > .icon .fa-comments {
+  color: #fde55e;
+}
+
+.tools > .lists > .list3 > .listing > .item2 > .icon .fa-ad,
+.tools > .lists > .list3 > .listing > .item3 > .icon .fa-ad {
+  color: #44ff44;
+}
+
+.tools > .lists > .list3 > .listing > .item2 > .icon .fa-linkedin,
+.tools > .lists > .list3 > .listing > .item3 > .icon .fa-linkedin {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.tools > .lists > .list3 > .listing > .item2 > .icon .fa-youtube,
+.tools > .lists > .list3 > .listing > .item3 > .icon .fa-youtube {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.tools > .lists > .list3 > .listing > .item2 > .icon .fa-reddit-alien,
+.tools > .lists > .list3 > .listing > .item3 > .icon .fa-reddit-alien {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.tools > .lists > .list3 > .listing > .item2 > .icon .fa-facebook-square,
+.tools > .lists > .list3 > .listing > .item3 > .icon .fa-facebook-square {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+}
+
+.tools > .lists > .list3 > .listing > .item2 > .icon .fa-tumblr-square,
+.tools > .lists > .list3 > .listing > .item3 > .icon .fa-tumblr-square {
+  -webkit-box-ordinal-group: 6;
+      -ms-flex-order: 5;
+          order: 5;
+}
+
+.tools > .lists > .list3 > .listing > .item2 > .icon .fa-instagram,
+.tools > .lists > .list3 > .listing > .item3 > .icon .fa-instagram {
+  -webkit-box-ordinal-group: 8;
+      -ms-flex-order: 7;
+          order: 7;
+}
+
+.tools > .lists > .list3 > .listing > .item2 > .icon .fa-periscope,
+.tools > .lists > .list3 > .listing > .item3 > .icon .fa-periscope {
+  -webkit-box-ordinal-group: 9;
+      -ms-flex-order: 8;
+          order: 8;
+}
+
+.tools > .lists > .list3 > .listing > .item2 > .icon .fa-twitter,
+.tools > .lists > .list3 > .listing > .item3 > .icon .fa-twitter {
+  -webkit-box-ordinal-group: 10;
+      -ms-flex-order: 9;
+          order: 9;
+}
+
+.tools > .lists > .list3 > .listing > .item2 > .icon .fa-comments,
+.tools > .lists > .list3 > .listing > .item3 > .icon .fa-comments {
+  -webkit-box-ordinal-group: 6;
+      -ms-flex-order: 5;
+          order: 5;
+}
+
+.tools > .lists > .list3 > .listing > .item2 > .icon .fa-ad,
+.tools > .lists > .list3 > .listing > .item3 > .icon .fa-ad {
+  -webkit-box-ordinal-group: 6;
+      -ms-flex-order: 5;
+          order: 5;
+}
+
+.fa-searchengin {
+  background: -webkit-radial-gradient(left 37% top 35%, 15px 50px, yellow 0%, yellow 10%, #000 30%, #000 95%, brown 95%, brown 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* CSP */
+.tools > .lists > .list3 > .listing > .item5 {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: '.';
+}
+
+.tools > .lists > .list3 > .listing > .item5 .icon {
+  position: relative;
+  left: 15%;
+  width: 0;
+}
+
+.tools > .lists > .list3 > .listing > .item5 .icon .fa-shield-alt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(2.86667rem, 4.58333rem);
+          transform: translate(2.86667rem, 4.58333rem);
+  z-index: 1;
+  color: gray;
+  font-size: 3.33333rem;
+  width: auto;
+  height: auto;
+}
+
+.tools > .lists > .list3 > .listing > .item5 .icon .fa-gripfire {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: red;
+  font-size: 10rem;
+  z-index: 0;
+  width: auto;
+  height: auto;
+}
+
+.tools > .lists > .list3 > .listing > .item5 .label {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+/* CSP */
+.tools {
+  z-index: 1;
+}
+
+.bg-img2 {
+  z-index: -1;
+}
+/*# sourceMappingURL=tools.css.map */

@@ -1,0 +1,141 @@
+.bg-img2 {
+  background-image: url("../assets/contact.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(4px);
+  width: 100%;
+  height: 100vh;
+
+  top: 300vh;
+
+  position: absolute;
+}
+
+.contact {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 300vh;
+}
+
+.contact .heading {
+  color: white;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(146, 66, 0, 0.5);
+}
+
+.contact > .map-form  {
+  filter: blur(2px);
+  display: flex;
+  justify-self: center;
+  flex-direction: row;
+  width: auto;
+  transform: translate(0, 35%);
+}
+
+
+
+.contact > .map-form > iframe {
+  border-radius: 10rem 0 0 10rem;
+  width: 70rem;
+}
+
+.contact > .map-form > .contact-form {
+  display:flex;
+  flex-direction: column;
+  width: 70rem;
+  height: auto;
+}
+
+.contact > .map-form > .contact-form > * {
+  width: 100%;
+}
+
+.contact > .map-form > .contact-form > .email-body {
+  height: 100%;
+  resize: none;
+}
+
+
+.email-address {
+  -webkit-border-top-right-radius: 0rem;
+  border-top-right-radius: 10rem;
+}
+
+.email-body, .email-title, .email-address {
+  background-color: #efefef;
+}
+
+.contact > .media {
+  position: absolute;
+  left: 0;
+  transform: translate(0, 40%);
+  height: auto;
+  width: auto;
+}
+
+.contact > .media > * {
+  display: flex;
+  justify-content: center;
+  font-size: 15rem;
+}
+
+.contact > .media > * > * > * {
+  font-size: 15rem;
+}
+
+.submit-container {
+  display: flex;
+  justify-content: center;
+  background-color: #efefef;
+  width: 100%;
+  padding: 2rem;
+  -webkit-border-bottom-right-radius: 0rem;
+  border-bottom-right-radius: 10rem;
+}
+
+.submit {
+  background-color: green;
+  color: white;
+  display: inline-flex;
+  align-self: center;
+  border-radius: 2rem;
+}
+
+.construction {
+  color: black;
+  display: grid;
+  grid-template-areas: '.';
+  grid-template-rows: 1fr 1fr 1fr;
+  position: absolute;
+  transform: translate(1.4%, 56%);
+  width: 144rem;
+  height: 90rem;
+  border-radius: 10rem;
+  z-index: 100;
+  align-items: center;
+}
+
+.construction > h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10rem;
+}
+.construction > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 10rem;
+  font-size: 5rem;
+}
+.construction > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10rem;
+}

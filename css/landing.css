@@ -1,0 +1,191 @@
+/* Landing Structure */
+.landing {
+  /* Flex Box */
+  background: linear-gradient(
+    rgba(255, 217, 0, 0.2), 
+    rgba(255, 217, 0, 0.2)
+  );
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  
+  /* Box Model */
+  height: 100vh;
+  width: 100%;
+  
+  /* Other Properties */
+  position: absolute;
+}
+
+.bg-img1 {
+  /* Background */
+  background: url('../assets/code.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  
+  /* Box Model */
+  width: 100%;
+  height: 100vh;
+  
+  /* Other Properties */
+  position: static;
+}
+
+
+/* Content Z-Index */
+.bg-img1 {z-index: 0;}
+.bg-img1-filter {z-index: 1;}
+.landing {z-index: 2;}
+
+/* Button */
+
+/* Button Static Properties */
+.btn {
+  width: 25%;
+  min-width: 75rem;
+  text-align: center;
+}
+
+/* Button Dynamic Properties */
+.btn {
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: background-color 0.5s;
+}
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: background-color 0.5s;
+} 
+.btn:active {
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: background-color 0.5s;
+} 
+
+/* Move to bottom of Landing view */
+.learn-more {
+  display:flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+}
+
+/* Learn More Static Properties */
+.learn-more > * {
+  /* Flex Box */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  
+  /* Box Model */
+  width: 30rem;
+  height: 30rem;
+  
+  /* Text Styles */
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+/* Font Size */
+.learn-more > a > h6 {
+  font-size: 5rem;
+}
+
+/* Arrow Animation */
+@keyframes pulsing {
+  0% {color: rgba(255, 255, 255, 1);}
+  50% {color: rgba(255, 255, 255, 0);}
+  100% {color: rgba(255, 255, 255, 0.99);}
+}
+
+.learn-more > a > :nth-child(2) {
+  animation: pulsing 2s ease 0s infinite;
+}
+
+.learn-more > a > :nth-child(3) {
+  animation: pulsing 2s ease 0.5s infinite;
+}
+
+.learn-more > a > :nth-child(4) {
+  animation: pulsing 2s ease 1s infinite;
+}
+
+.learn-more > a > :nth-child(5) {
+  animation: pulsing 2s ease 1.5s infinite;
+}
+
+
+.learn-more > a > i {
+  font-size: 3rem;
+}
+.learn-more > a > :nth-child(5) {
+  line-height: 0.5;
+  font-size: 15rem;
+}
+
+/* Text Animation */
+.learn-more > a > :nth-child(1):hover {
+  color: black;
+  letter-spacing: 0.5px;
+  transition: all 1s;
+}
+
+.learn-more > a > :nth-child(1) {
+  display: flex;
+  flex-wrap: nowrap;
+  transition: all 1s;
+}
+
+
+/* Logo Static Properties */
+.logo {
+  width: 25%;
+  min-width: 75rem
+}
+.logo > img {
+  width: 100%;
+}
+
+
+@media (max-width: 450px) {
+  .logo {
+    min-width: 50rem
+  }
+  .btn {
+    min-width: 50rem
+  }
+}
+
+
+/* Adjust Landing Elements */
+@media (max-height: 50rem) {
+  .landing {
+    justify-content: flex-start;
+  }
+  .landing > .btn > h1 {
+    font-size: 7rem
+  }
+}
+
+@media (max-height: 34.375rem) {
+  .learn-more > a > .fa-circle {
+    display: none;
+  }
+  .learn-more > a {
+    justify-content: flex-start;
+    height: auto;
+  }
+}
+
+@media (max-height: 28.125rem) {
+  .learn-more > a > :nth-child(1) {
+    display: none;
+  }
+}
+
+/* Limit Height Shrinkage Of Landing View */
+@media (max-height: 450px) {
+  .landing {min-height: 450px;}
+  .bg-img1 {min-height: 450px;}
+}

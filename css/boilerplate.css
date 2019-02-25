@@ -1,0 +1,50 @@
+* {
+  font-size: 5px;
+  font-weight: 100;
+  line-height: 1;
+  font-family: Tahoma;
+  letter-spacing: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+h1 {font-size: 8rem;}
+h2 {font-size: 7rem;}
+h3 {font-size: 6rem;}
+h4 {font-size: 5rem;}
+h5 {font-size: 4rem;}
+h6 {font-size: 3rem;}
+p {font-size: 2rem}
+
+h1 {font-family: Arial;}
+h2 {font-family: Arial;}
+h3 {font-family: Arial;}
+h4 {font-family: Arial;}
+h5 {font-family: Arial;}
+h6 {font-family: Arial;}
+p {font-family: Tahoma;}
+
+div {
+  width: 100%;
+}
+
+input {
+  padding:2rem;
+  font-size: 3rem;
+  width: 40rem;
+  height: 10rem;
+}
+
+textarea {
+  padding:2rem;
+  font-size: 3rem;
+  width: 40rem;
+  height: 50rem;
+}
+
+
+/* 
+  Tahoma > less memory
+  Arial > easy to read
+*/

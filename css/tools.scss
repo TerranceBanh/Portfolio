@@ -1,0 +1,208 @@
+:root {
+  --icon-size: 45rem;
+  --label-size: 21rem;
+  --list1-items: 3;
+  --list2-items: 5;
+  --list3-items: 5;
+}
+
+.tools                                                       {
+  background-color: #ffdc3f7a;
+  display: grid;
+  position: absolute;
+  grid-template-areas: ".";
+  grid-template-rows: 1fr 9fr 1fr;
+  grid-template-columns: 1fr;
+
+  top: 130vh;
+  height: 70vh;
+  width: 100%;
+}
+.tools > .heading                                            {
+  display: flex;
+  background-color: #CE4B2Cdd;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.tools > .lists                                              {
+  display: grid;
+  grid-template-areas: ". . .";
+  grid-template-rows: 1fr;
+}
+.tools > .lists >    *                                       {
+  height: 100%;
+}
+.tools > .lists >    *   > .sub-heading                      {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+}
+.tools > .lists >    *   > .listing                          {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+}
+.tools > .lists >    *   > .listing > *                      {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  height: 100%;
+}
+.tools > .lists >    *   > .listing > * > .label             {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+.tools > .lists > .list1 > .listing > * > .label >     *     {
+  font-size: calc(var(--label-size) / var(--list1-items));
+}
+.tools > .lists > .list2 > .listing > * > .label >     *     {
+  font-size: calc(var(--label-size) / var(--list2-items));
+}
+.tools > .lists >    *   > .listing > * > .icon              {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+.tools > .lists > .list1 > .listing > * > .icon  >     *     {
+  width: calc(var(--icon-size) / var(--list1-items));
+  height: calc(var(--icon-size) / var(--list1-items));
+  font-size: calc(var(--icon-size) / var(--list1-items));
+}
+.tools > .lists > .list2 > .listing > * > .icon  >     *     {
+  width: calc(var(--icon-size) / var(--list2-items));
+  height: calc(var(--icon-size) / var(--list2-items));
+  font-size: calc(var(--icon-size) / var(--list2-items));
+}
+.tools > .lists > .list3 > .listing > * > .icon  >     *     {
+  width: calc(var(--icon-size) / var(--list3-items));
+  height: calc(var(--icon-size) / var(--list3-items));
+  font-size: calc(var(--icon-size) / var(--list3-items));
+}
+.tools > .lists >    *   > .listing > * > .icon  > i::before {
+  /* Center Font Awesome Icons */
+  display: flex;
+  justify-content: center;
+}
+
+.tools > .lists >    *   > .listing > * > .icon > .html    {color: #f16529;}
+.tools > .lists >    *   > .listing > * > .icon > .css     {color: #00aade;}
+.tools > .lists >    *   > .listing > * > .icon > .js      {color: #ffdf00;}
+
+.tools > .lists >    *   > .listing > * > .icon > .express {color: rgb(60, 73, 88);}
+.tools > .lists >    *   > .listing > * > .icon > .react   {color: #61dafb;}
+.tools > .lists >    *   > .listing > * > .icon > .nodejs  {color: #8cc84b;}
+/* .tools > .lists > * > .listing > * > .icon > .mongdb {color: IMAGE;} */
+/* .tools > .lists > * > .listing > * > .icon > .graphql {color: IMAGE;} */
+
+.tools > .lists > .list3 > .listing > .item2 > .icon,
+.tools > .lists > .list3 > .listing > .item3 > .icon {
+  display: grid;
+  grid-template-areas: '. . .';
+  .fa-youtube  {color: #ff0000;}
+  .fa-twitter  {color: #00aced;}
+  .fa-facebook-square  {color: #3b5998;}
+  .fa-linkedin  {color: #007bb5;}
+  .fa-reddit-alien  {color: #ff4500;}
+  .fa-tumblr-square  {color: #34465D;}
+  .fa-periscope {
+    background: -webkit-radial-gradient(left 50% top 40%, circle, #e94f3c 0%, #e94f3c 45%, #40a4c4 45%, #40a4c4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .fa-instagram {
+    background: -webkit-radial-gradient(bottom left, #fccc63, #fbad50, #e95950, #cd486b,  #bc2a8d, #8a3ab9, #4c68d7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .fa-comments  {color: #fde55e;}
+  .fa-ad  {color: rgb(68, 255, 68);}
+  
+  
+  
+  .fa-linkedin         {order: 1}
+  .fa-youtube          {order: 2}
+  .fa-reddit-alien     {order: 3}
+  .fa-facebook-square  {order: 4}
+  .fa-tumblr-square    {order: 5}
+  .fa-instagram        {order: 7}
+  .fa-periscope        {order: 8}
+  .fa-twitter          {order: 9}
+
+  .fa-comments         {order: 5}
+  .fa-ad               {order: 5}
+  
+}
+.fa-searchengin  {
+  background: -webkit-radial-gradient(
+    left 37% top 35%,
+    15px 50px,
+    yellow 0%, yellow 10%,
+    #000 30%, #000 95%,
+    brown 95%, brown 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* CSP */
+.tools > .lists > .list3 > .listing > .item5 {
+  display: grid;
+  grid-template-areas: '.';
+  .icon    {
+    $icon-size: 0;
+    $fire-size: 10rem;
+    $fireX: 0;
+    $fireY: 0;
+    $fire-width: $fire-size * 0.68;
+    $fire-height: $fire-size;
+    $shield-size: $fire-size / 3;
+    $shield-width: $shield-size;
+    $shield-height: $shield-size;
+
+    position: relative;
+    left: 15%; //Quick Fix
+    width: 0;
+    .fa-shield-alt  {
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(
+        ($fire-width / 1.5) - ($shield-width / 2) + $fireX,
+        ($fire-height / 1.6) - ($shield-height / 2) + $fireY
+      );
+      z-index: 1;
+      color: gray;
+      font-size: $shield-size;
+      width: auto;
+      height: auto;
+    }
+    .fa-gripfire  {
+      display: flex;
+      position: absolute;
+      top: $fireY;
+      left: $fireX;
+      color: red;
+      font-size: $fire-size;
+      z-index: 0;
+      width: auto;
+      height: auto;
+    }
+  }
+  .label {
+    order: 1;
+  }
+}
+/* CSP */
+
+
+.tools {z-index: 1;}
+.bg-img2 {z-index: -1;}
